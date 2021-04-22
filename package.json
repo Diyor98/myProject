@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon run server/server.js"
+    "server": "nodemon run server/server.js",
+    "dev:import": "node server/seeder",
+    "dev:destroy": "node server/seeder -d"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +18,7 @@
     "express": "^4.17.1",
     "helmet": "^4.5.0",
     "jsonwebtoken": "^8.5.1",
+    "multer": "^1.4.2",
     "pg": "^8.6.0",
     "pg-hstore": "^2.3.3",
     "sequelize": "^6.6.2"
