@@ -20,7 +20,7 @@ const Product = sequelize.define('product', {
   img: { type: DataTypes.STRING, defaultValue: '' },
 })
 
-const Brand = sequelize.define('product', {
+const Brand = sequelize.define('brand', {
   id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
   name: { type: DataTypes.STRING, allowNull: false },
 })
